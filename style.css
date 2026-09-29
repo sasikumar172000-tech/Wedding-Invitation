@@ -1,0 +1,330 @@
+/* Reset & Base Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Mobile Screen Container Setup */
+.mobile-container {
+  width: 100%;
+  max-width: 430px; /* Standard mobile device width */
+  background-color: #fdfbf7;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Music Floating Button */
+.music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #ffffffd4;
+  border: 1px solid #d4af37;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography Styles */
+h1, h2, h3, h4 {
+  font-family: 'Cinzel', serif;
+  color: #4a1525; /* Royal Marroon / Crimson */
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #a88332; /* Gold accents */
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 40px 20px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #fbf7ee 0%, #fdfbf7 100%);
+  position: relative;
+}
+
+.quote {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.names-title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b101c;
+  letter-spacing: 1px;
+}
+
+.names-title .weds {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  color: #a88332;
+  display: block;
+  margin: 5px 0;
+}
+
+/* Countdown Container */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.time-box {
+  background: #ffffff;
+  border: 1px solid #e0d0b0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  min-width: 55px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.time-box span {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b101c;
+}
+
+.time-box label {
+  font-size: 0.55rem;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.hero-image-container img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #d4af37;
+  margin-top: 10px;
+}
+
+/* Generic Section Styles */
+.section {
+  padding: 30px 20px;
+}
+
+/* Message Section & Glass Card */
+.message-section {
+  background: url('https://via.placeholder.com/400x500/3b101c/ffffff?text=Background+Image') center/cover;
+  position: relative;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(5px);
+  padding: 25px 20px;
+  border-radius: 12px;
+  border: 1px solid #d4af37;
+  text-align: center;
+}
+
+.glass-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.glass-card p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.signature {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #8b6b23;
+}
+
+/* Family Details Section */
+.decorative-card {
+  border: 1px solid #e2d1a6;
+  padding: 30px 15px;
+  border-radius: 8px;
+  background-color: #fffefb;
+  text-align: center;
+}
+
+.person-details {
+  margin: 20px 0;
+}
+
+.role {
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: #a88332;
+  font-weight: bold;
+}
+
+.person-details h3 {
+  font-size: 1.3rem;
+  margin: 5px 0;
+}
+
+.person-details .parents {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.divider {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+  color: #a88332;
+  margin: 10px 0;
+}
+
+/* Schedule & Event Cards */
+.schedule-section {
+  background-color: #f7f3ea;
+}
+
+.events-list {
+  margin: 20px 0;
+}
+
+.event-card {
+  display: flex;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1px solid #ebdcb9;
+  align-items: center;
+}
+
+.event-date {
+  border-right: 1px solid #ebdcb9;
+  padding-right: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.event-date .day {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b101c;
+  display: block;
+}
+
+.event-date .month {
+  font-size: 0.7rem;
+  color: #a88332;
+  font-weight: 600;
+}
+
+.event-info h4 {
+  text-align: left;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.event-info p {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.venue-card {
+  background: #ffffff;
+  border: 1px dashed #d4af37;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.btn-location {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #8b1e2b;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Travel Guide Section */
+.guide-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.guide-card h4 {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #a88332;
+  margin: 15px 0 10px;
+  text-align: left;
+}
+
+.station-grid {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  text-align: center;
+  background: #fdfbf7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.train-details p {
+  font-size: 0.75rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Footer Section */
+.footer-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fbf7ee;
+  border-top: 1px solid #ebdcb9;
+}
+
+.footer-section p {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.footer-section .closing {
+  font-weight: 600;
+  color: #3b101c;
+  margin-top: 15px;
+}
